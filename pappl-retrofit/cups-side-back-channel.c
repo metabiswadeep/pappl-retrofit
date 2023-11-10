@@ -15,7 +15,6 @@
 
 #include <pappl-retrofit/cups-side-back-channel-private.h>
 #include <cups/cups.h>
-#include <string.h>
 #include <errno.h>
 #ifdef _WIN32
 #  include <io.h>
