@@ -1832,11 +1832,11 @@ _prDriverSetup(
   // Raster graphics modes fo PWG Raster input
   if (ppd->color_device)
     driver_data->raster_types =
-      PAPPL_PWG_RASTER_TYPE_BLACK_1 | PAPPL_PWG_RASTER_TYPE_SGRAY_8 |
-      PAPPL_PWG_RASTER_TYPE_SRGB_8;
+      PAPPL_RASTER_TYPE_BLACK_1 | PAPPL_RASTER_TYPE_SGRAY_8 |
+      PAPPL_RASTER_TYPE_SRGB_8;
   else
     driver_data->raster_types =
-      PAPPL_PWG_RASTER_TYPE_BLACK_1 | PAPPL_PWG_RASTER_TYPE_SGRAY_8;
+      PAPPL_RASTER_TYPE_BLACK_1 | PAPPL_RASTER_TYPE_SGRAY_8;
   driver_data->force_raster_type = 0;
 
   // Duplex

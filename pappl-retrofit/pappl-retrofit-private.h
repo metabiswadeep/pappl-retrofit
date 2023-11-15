@@ -37,6 +37,14 @@
 #include <regex.h>
 
 
+//Support for pappl 1.x
+#  if PAPPL_VERSION_MAJOR < 2
+#    define PAPPL_RASTER_TYPE_BLACK_1 PAPPL_PWG_RASTER_TYPE_BLACK_1
+#    define PAPPL_RASTER_TYPE_SGRAY_8 PAPPL_PWG_RASTER_TYPE_SGRAY_8
+#    define PAPPL_RASTER_TYPE_SRGB_8 PAPPL_PWG_RASTER_TYPE_SRGB_8
+#  endif
+
+
 //
 // C++ magic...
 //
